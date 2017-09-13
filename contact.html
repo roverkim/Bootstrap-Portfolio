@@ -1,70 +1,78 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="assets/css/style.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<!doctype html>
+<html lang="en-us">
 
-    <title>Contact Page</title>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About | Ryan Kim</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
+</head>
 
-  <body>
+<body>
 
-      <!-- Header Row has 4 colums, 1 row -->
-      <header class = "header">
-        <div class= "name animated fadeInDown delay-1">
-          <h2>Ryan Kim</h2>
-        </div>
-        <!-- Header buttons has a nested grid of 3 columns and 1 row -->
-          <ul class= "header_buttons animated fadeIn delay-2">
-            <li class ="link1"><a href="index.html" class="button">About</a></li>
-            <li class ="link2"><a href="portfolio.html" class="button">Portfolio</a></li>
-            <li class ="link3"><a href="#" class="button">Contact</a></li>
-          </ul>
-      </header>
-      <!--Main section has 2 columns with 2 rows-->
-      <section class = "main_section animated fadeInLeft delay-4">
-        <header class = "section_header animated fadeInDown delay-7">
-          <h2>Contact</h2>
-        </header>
-        <!-- Form -->
-        <div class = "section_body">
-          <div class ="contact_body animated fadeInDown delay-9">
-            <form class="contact_form" action="#" method="post">
-              <label for="form_name">Name</label>
-              <input type="text" name="form_name" placeholder="Your Name"><br>
-              <label for="email">Email</label>
-              <input type="email" name="email" placeholder="Your Email Address"><br />
-              <label for="message">Message</label>
-              <textarea name="message" rows="10" placeholder="Your Message Goes Here"></textarea>
-              <input type="submit" value="Submit">
-            </form>
+  <header id="masthead" class ="row">
+      <div class="container-fluid nav navbar masthead_style">
+        <div class="row header_row">
+          <div class="col-md-12">
+            <a href="index.html" id="logo" class = "nav navbar-header col-md-4 col-sm-6 col-xs-12 animated fadeInDown delay-1">Ryan Kim</a>
+            <div class="col-md-2"></div>
+            <nav class = "col-md-6 col-sm-6 col-xs-12 nav_links animated fadeIn delay-2" >
+              <a href="index.html">About</a>
+              <a href="portfolio.html">Portfolio</a>
+              <a href="contact.html">Contact</a>
+            </nav>
+
           </div>
         </div>
-      </section>
-      <!-- Side section has 1 column with 2 rows -->
-      <aside class= "side_section animated bounceInRight delay-3">
-        <header class ="side_header">
-          <h2>Connect With Me</h2>
-        </header>
-        <!-- Icon buttons for social media is nested in second row with 3 columns and 1 row -->
-        <div class ="icons">
-          <a href="https://www.facebook.com/roverthegreat" class = "facebook "><img src="assets\images\if_Facebook_343415.png" alt="Facebook" class = "animated rotateIn delay-4"></a>
-          <a href="https://github.com/roverkim" class = "git" > <img src="assets\images\if_github_social_media_logo_1531637.png" alt="Github" class = "animated rotateIn delay-4"></a>
-          <a href="https://www.linkedin.com/in/roverkim/" class = "linkedin"><img src="assets\images\if_linkedin_328043.png" alt="Linkedin" class = "animated rotateIn delay-4"></a>
-        </div>
-      </aside>
+    </div>
+  </header>
 
-      <!--Footer Row has 1 column and 2 rows  -->
-      <footer class ="footer">
-        <div class = "pre_footer"></div>
-        <div class  = "within_footer">
-          <p class = "copyright animated slideInUp delay-2">@ Copyright 2017 Ryan Kim</p>
-        </div>
-      </footer>
+  <div id="main-container" class="container animated fadeInLeft delay-4">
+    <section class="main-section col-xs-12 col-md-9 animated fadeInLeft delay-4" >
+      <h1 class =" animated fadeInDown delay-7">Contact</h1>
 
-  </body>
+      <form id="contact-form" class ="animated fadeInDown delay-9">
+        <ul>
+          <li>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+          </li>
+          <li>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required="required"></textarea>
+          </li>
+        </ul>
+        <input type="submit">
+      </form>
+
+    </section>
+
+    <section class="sidebar col-xs-12 col-md-3 animated bounceInRight delay-3">
+      <div id="connect">
+        <h2>Connect with Me</h2>
+
+        <a href="https://github.com/roverkim"><img src="assets/images/github-128.png" class="social animated rotateIn animated rotateIn delay-4" alt="GitHub" /></a>
+        <a href="https://www.linkedin.com/in/roverkim/"><img src="assets/images/linkedin-128.png" class="social animated animated rotateIn delay-4" alt="LinkedIn" /></a>
+        <a href="https://www.facebook.com/roverthegreat"><img src="assets/images/stackoverflow-128.png" class="social animated rotateIn delay-4" alt="Stack Overflow" /></a>
+      </div>
+    </section>
+  </div>
+
+<footer class="footer navbar-fixed-bottom">
+
+  <div class="container animated slideInUp delay-2">
+      Copyright &copy; 2017 Ryan Kim
+  </div>
+</footer>
+</body>
+
 </html>

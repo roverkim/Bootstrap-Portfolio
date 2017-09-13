@@ -1,67 +1,90 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="assets/css/style.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<!doctype html>
+<html lang="en-us">
 
-    <title>Portfolio Page</title>
-  </head>
-  <body>
-      <!-- Header Row has 5 colums, 1 row -->
-      <header class = "header">
-        <div class= "name animated fadeInDown delay-1">
-          <h2>Ryan Kim</h2>
-        </div>
-        <!-- Header buttons has a nested grid of 3 columns and 1 row -->
-          <ul class= "header_buttons animated fadeIn delay-2">
-            <li class ="link1"><a href="index.html" class="button">About</a></li>
-            <li class ="link2"><a href="#" class="button">Portfolio</a></li>
-            <li class ="link3"><a href="contact.html" class="button">Contact</a></li>
-          </ul>
-      </header>
-      <!--Main section has 2 columns with 4 rows-->
-      <section class = "main_section animated fadeInLeft delay-4">
-        <header class = "section_header">
-          <h2>Portfolio</h2>
-        </header>
-        <div class = "section_body">
-          <div class ="portfolio_body">
-            <a href="#" class="img1 animated zoomIn delay-5"><img src="assets\images\img1.jpeg" alt="img1" class="img">
-            <div class= "image_text"><p>Project 1</p></div></a>
-            <a href="#" class="img2 animated zoomIn delay-6"><img src="assets\images\img2.jpeg" alt="img2" class="img">
-            <div class= "image_text"><p>Project 2</p></div></a>
-            <a href="#" class="img3 animated zoomIn delay-7"><img src="assets\images\img3.jpeg" alt="img3" class="img">
-            <div class= "image_text"><p>Project 3</p></div></a>
-            <a href="#" class="img4 animated zoomIn delay-8"><img src="assets\images\img4.jpeg" alt="img4" class="img">
-            <div class= "image_text"><p>Project 4</p></div></a>
-            <a href="#" class="img5 animated zoomIn delay-9"><img src="assets\images\img5.jpeg" alt="img5" class="img">
-            <div class= "image_text"><p>Project 5</p></div></a>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About | Ryan Kim</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <header id="masthead" class ="row">
+      <div class="container-fluid nav navbar masthead_style">
+        <div class="row header_row">
+          <div class="col-md-12">
+            <a href="index.html" id="logo" class = "nav navbar-header col-md-4 col-sm-6 col-xs-12 animated fadeInDown delay-1">Ryan Kim</a>
+            <div class="col-md-2"></div>
+            <nav class = "col-md-6 col-sm-6 col-xs-12 nav_links animated fadeIn delay-2" >
+              <a href="index.html">About</a>
+              <a href="portfolio.html">Portfolio</a>
+              <a href="contact.html">Contact</a>
+            </nav>
           </div>
         </div>
-      </section>
-      <!-- Side section has 1 column with 2 rows -->
-      <aside class= "side_section animated bounceInRight delay-3">
-        <header class ="side_header">
-          <h2>Connect With Me</h2>
-        </header>
-        <!-- Icon buttons for social media is nested in second row with 3 columns and 1 row -->
-        <div class ="icons">
-          <a href="https://www.facebook.com/roverthegreat" class = "facebook "><img src="assets\images\if_Facebook_343415.png" alt="Facebook" class = "animated rotateIn delay-4"></a>
-          <a href="https://github.com/roverkim" class = "git" > <img src="assets\images\if_github_social_media_logo_1531637.png" alt="Github" class = "animated rotateIn delay-4"></a>
-          <a href="https://www.linkedin.com/in/roverkim/" class = "linkedin"><img src="assets\images\if_linkedin_328043.png" alt="Linkedin" class = "animated rotateIn delay-4"></a>
-        </div>
-      </aside>
+    </div>
+  </header>
 
-      <!--Footer Row has 1 column and 2 rows  -->
-      <footer class ="footer">
-        <div class = "pre_footer"></div>
-        <div class  = "within_footer">
-          <p class = "copyright animated slideInUp delay-9">@ Copyright 2017 Ryan Kim</p>
-        </div>
-      </footer>
+  <div id="main-container" class="container">
+    <section class="main-section animated fadeInLeft delay-4 col-xs-12 col-md-9 ">
+      <h1>Portfolio</h1>
 
-  </body>
+      <div class="row">
+        <div class="work col-xs-12 col-md-5 col-sm-5  img-thumbnail ">
+          <img src="assets/images/technics-q-c-640-480-1.jpg" alt="hangman" class = "animated zoomIn delay-5">
+          <h3>Hangman</h3>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="work col-xs-12 col-md-5 col-sm-5 img-thumbnail">
+          <img src="assets/images/technics-q-c-640-480-2.jpg" alt="RPG Game" class = " animated zoomIn delay-6">
+          <h3>RPG Game</h3>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="work col-xs-12 col-md-5 col-sm-5 img-thumbnail">
+          <img src="assets/images/technics-q-c-640-480-5.jpg" alt="Trivia Game" class = " animated zoomIn delay-7">
+          <h3>Trivia Game</h3>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="work col-xs-12 col-md-5 col-sm-5 img-thumbnail">
+          <img src="assets/images/technics-q-c-640-480-7.jpg" alt="Rutgers Info Widget" class = "animated zoomIn delay-8">
+          <h3>Rutgers Info Widget</h3>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-md-6 work">
+          <img src="assets/images/technics-q-c-640-480-9.jpg" alt="Rock Paper Scissors" class = "img-thumbnail animated zoomIn delay-9">
+          <h3>Rock Paper Scissors</h3>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="sidebar col-xs-12 col-md-3 animated bounceInRight delay-3">
+      <div id="connect">
+        <h2>Connect with Me</h2>
+
+        <a href="https://github.com/roverkim"><img src="assets/images/github-128.png" class="social animated rotateIn animated rotateIn delay-4" alt="GitHub" /></a>
+        <a href="https://www.linkedin.com/in/roverkim/"><img src="assets/images/linkedin-128.png" class="social animated animated rotateIn delay-4" alt="LinkedIn" /></a>
+        <a href="https://www.facebook.com/roverthegreat"><img src="assets/images/stackoverflow-128.png" class="social animated rotateIn delay-4" alt="Stack Overflow" /></a>
+      </div>
+    </section>
+    </div>
+
+    <footer class="footer navbar-fixed-bottom">
+
+    <div class="container animated slideInUp delay-2">
+      Copyright &copy; 2017 Ryan Kim
+    </div>
+    </footer>
+</body>
+
 </html>
