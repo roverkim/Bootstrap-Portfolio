@@ -144,6 +144,7 @@ nav a:first-child {
 .nav_links{
     text-align: center;
     margin: 25px auto 5px auto;
+    font-size: 1.8vh
 }
 
 /* footer */
@@ -297,16 +298,23 @@ input[type=submit] {
   border: 0 none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 950px) {
   .sidebar{
     max-width: none;
   }
+
   .main-section{
     max-width: none;
   }
+
   .work{
     margin: 20px auto 25px auto;
     width: 100%;
+  }
+
+  .nav_links{
+    font-size: 1.8vh;
+    }
   }
 }
 
